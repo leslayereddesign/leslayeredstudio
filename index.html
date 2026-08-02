@@ -64,7 +64,7 @@ body{
 
 .layout{
   display:grid;
-  grid-template-columns: 58px var(--photo-w) 360px minmax(0,1fr);
+  grid-template-columns: 58px var(--photo-w) 430px minmax(0,1fr);
   column-gap:40px;
   align-items:start;
 }
@@ -117,7 +117,7 @@ body{
 .blurb{
   width:fit-content;
   max-width:100%;
-  margin:296px 0 0 130px;    /* pushes it down and across into place */
+  margin:296px 0 0 190px;    /* pushes it down and clear of the red writing */
   font-family:var(--body);
   font-size:15px;
   line-height:1.42;
@@ -131,7 +131,7 @@ body{
 .ask{
   position:absolute;
   top:130px;
-  left:-159px;               /* sits further left than the box, as in the layout */
+  left:-229px;               /* sits further left than the box, as in the layout */
   width:470px;
 }
 .ask p{
@@ -143,7 +143,7 @@ body{
 }
 .ask svg{ display:block; width:210px; height:150px; margin:0 0 0 200px; }
 
-.signup{ width:400px; margin-left:auto; padding-top:334px; }
+.signup{ width:100%; max-width:400px; margin-left:auto; padding-top:334px; }
 
 .signup input{
   display:block;
@@ -206,6 +206,7 @@ body{
   margin:0 auto;
   padding:0 40px 40px;
   font-size:21px;
+  text-transform:uppercase;
 }
 .services i{
   display:block;
@@ -220,7 +221,7 @@ body{
    ============================================================ */
 @media (max-width:1200px){
   .layout{ grid-template-columns:44px var(--photo-w) minmax(0,1fr); }
-  .blurb{ margin:296px 0 0 60px; }
+  .blurb{ margin:296px 0 0 240px; }
   .cta{ grid-column:1 / -1; margin-top:60px; }
   .ask{ position:static; width:auto; }
   .ask svg{ margin-left:120px; }
@@ -276,7 +277,7 @@ body{
   .cta{ margin-top:20px; }
   .ask{ position:static; width:auto; }
   .ask p{ font-size:30px; }
-  .ask svg{ display:block; width:150px; height:92px; margin:2px 0 0 100px; }
+  .ask svg{ display:block; width:110px; height:68px; margin:2px 0 0 45px; }
 
   .signup{ width:69%; margin-left:0; padding-top:4px; }
   .signup input{ height:58px; padding:0 10px; font-size:15px; letter-spacing:.24em; }
